@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 app.get('', (req, res) => {
     res.render('index', {
         title: '服务器接口',
-        bodytext: '这个页用来分析服务信息',
+        bodytext:'这个页用来分析服务信息',
         name: 'Robert Wijntjes'
     })
 })
