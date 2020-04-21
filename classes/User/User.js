@@ -7,9 +7,9 @@ class User{
         this.password = password,
         // Entered Data
 
-
-        this.location = location,
-        this.uid = uuid.v1
+        this.typeofuser = 'basic'
+        this.location = 'Dublin:Ireland',
+        this.uid = uuid.v1()
         // Automatically generated Data
     }
     getName(){
@@ -26,6 +26,9 @@ class User{
     }
     getUuid(){
         return this.uid
+    }
+    gettypeofuser(){
+        return this.typeofuser
     }
     // Getter Methods
 
@@ -45,4 +48,12 @@ class User{
     setUuid(uid){
         this.uid = uid
     }
+    setTypeofuser(typeofuser){
+        this.typeofuser = typeofuser
+    }
+    // Setter Methods
+}
+
+module.exports = {
+    User
 }
