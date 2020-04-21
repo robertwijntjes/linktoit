@@ -33,8 +33,6 @@ app.get('', (req, res) => {
 })
 
 app.post('/login',(req,res)=>{
-
-    
     console.log({
         name: req.body.name,
         passwordd: req.body.password
